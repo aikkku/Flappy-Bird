@@ -1,0 +1,67 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html,body{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.content{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.text{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.text img{
+    width: 400px;
+}
+
+.install:hover{
+    margin-top: -1%;
+}
+
+.install{
+    margin-left: auto;
+    margin-right: auto;
+    transition: 0.1s ease-in;
+}
+
+.install img{
+    width: 300px;
+}
+
+.g{
+    position: absolute;
+    width: 200%;
+    height: 30%;
+    top: 70%;
+    left: 0px;
+    background-image: url('g.png');
+    animation: ground 10s infinite linear;
+}
+
+.bg{
+    width: 100%;
+    height: 100%;
+    background-image: url('bg.png');
+}
+
+@keyframes ground{
+    from{
+        left: 0px;
+    }
+
+    to{
+        left: -100%;
+    }
+}
